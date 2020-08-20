@@ -1,0 +1,242 @@
+<PropertyList>
+
+ <!-- panel models -->
+
+<model>
+  <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/KI-13/KI-13.xml</path>
+  <offsets>
+   <x-m>3.149</x-m>
+   <y-m>0.000</y-m>
+   <z-m>0.727</z-m>
+  </offsets>
+ </model>
+
+
+<model>
+  <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/fuel/fuel.xml</path>
+  <offsets>
+   <x-m>2.98</x-m>
+   <y-m>0.0240</y-m>
+   <z-m>0.120</z-m>
+  </offsets>
+ </model>
+
+
+ <model>
+  <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/clock-ger/clock-ger.xml</path>
+  <offsets>
+   <x-m>2.98</x-m>
+   <y-m>-0.0440</y-m>
+   <z-m>0.120</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/alt/alt.xml</path>
+  <offsets>
+   <x-m>2.981</x-m>
+   <y-m>-0.377</y-m>
+   <z-m>0.278</z-m>
+  </offsets>
+ </model> 
+
+<model>
+  <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/alt/alt.xml</path>
+  <offsets>
+   <x-m>2.981</x-m>
+   <y-m>0.160</y-m>
+   <z-m>0.278</z-m>
+  </offsets>
+ </model>
+ 
+ <model>
+  <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/oiltemp-ger/oiltemp.xml</path>
+  <offsets>
+   <x-m>2.977</x-m>
+   <y-m>-0.078</y-m>
+   <z-m>0.340</z-m>
+  </offsets>
+ </model>
+
+  <model>
+  <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/oil-fuelpress-ger/oil-fuelpress-ger.xml</path>
+  <offsets>
+   <x-m>2.979</x-m>
+   <y-m>-0.006</y-m>
+   <z-m>0.340</z-m>
+  </offsets>
+ </model>
+
+<model>
+  <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/pitchclock/pitchindicator.xml</path>
+  <offsets>
+   <x-m>2.98</x-m>
+   <y-m>0.0635</y-m>
+   <z-m>0.340</z-m>
+  </offsets>
+ </model>
+
+<model>
+  <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/asi/airspeed.xml</path>
+  <offsets>
+   <x-m>2.978</x-m>
+   <y-m>-0.374</y-m>
+   <z-m>0.358</z-m>
+  </offsets>
+ </model>
+
+<model>
+  <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/asi/airspeed.xml</path>
+  <offsets>
+   <x-m>2.978</x-m>
+   <y-m>0.184</y-m>
+   <z-m>0.358</z-m>
+ </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/tach35-ger/tach35-ger.xml</path>
+  <offsets>
+   <x-m>2.978</x-m>
+   <y-m>-0.080</y-m>
+   <z-m>0.416</z-m>
+  </offsets>
+ </model>
+
+ 
+ <model>
+  <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/vario30-ger/vario30-ger.xml</path>
+  <offsets>
+   <x-m>2.978</x-m>
+   <y-m>-0.175</y-m>
+   <z-m>0.286</z-m>
+  </offsets>
+ </model>
+
+<model>
+  <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/vario30-ger/vario30-ger.xml</path>
+  <offsets>
+   <x-m>2.978</x-m>
+   <y-m>0.358</y-m>
+   <z-m>0.286</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/flaps/flaps.xml</path>
+  <offsets>
+   <x-m>2.981</x-m>
+   <y-m>-0.294</y-m>
+   <z-m>0.190</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/remote-compass-ger/remote-ger.xml</path>
+  <offsets>
+   <x-m>2.962</x-m>
+   <y-m>-0.273</y-m>
+   <z-m>0.280</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/remote-compass-ger/remote-ger.xml</path>
+  <offsets>
+   <x-m>2.962</x-m>
+   <y-m>0.265</y-m>
+   <z-m>0.280</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/man18-ger/man18-ger.xml</path>
+  <offsets>
+   <x-m>2.979</x-m>
+   <y-m>0.066</y-m>
+   <z-m>0.413</z-m>
+  </offsets>
+ </model>
+
+
+<model>
+  <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/turn/turn.xml</path>
+  <offsets>
+   <x-m>2.982</x-m>
+   <y-m>-0.196</y-m>
+   <z-m>0.360</z-m>
+  </offsets>
+ </model>
+
+<model>
+  <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/turn/turn.xml</path>
+  <offsets>
+   <x-m>2.982</x-m>
+   <y-m>0.364</y-m>
+   <z-m>0.357</z-m>
+  </offsets>
+ </model>
+
+<model>
+  <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/AI/ai.xml</path>
+  <offsets>
+   <x-m>2.9825</x-m>
+   <y-m>-0.286</y-m>
+   <z-m>0.371</z-m>
+  </offsets>
+ </model>
+
+<model>
+  <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/AI/ai.xml</path>
+  <offsets>
+   <x-m>2.9825</x-m>
+   <y-m>0.275</y-m>
+   <z-m>0.366</z-m>
+  </offsets>
+ </model>
+	
+
+ <!-- non-panel models -->
+ 
+
+<!-- eigene Erweiterung -->
+<model>
+  <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/Stick/stick.xml</path>
+  <offsets>
+   <x-m>3.295</x-m>
+   <y-m>-0.290</y-m>
+   <z-m>-0.170</z-m>
+  </offsets>
+ </model>
+
+<model>
+  <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/Stick/stick.xml</path>
+  <offsets>
+   <x-m>3.295</x-m>
+   <y-m>0.290</y-m>
+   <z-m>-0.170</z-m>
+  </offsets>
+ </model>
+ 
+
+ <model>
+   <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/pedals/pedals.xml</path>
+   <offsets>
+   <x-m>2.810</x-m>
+   <y-m>-0.270</y-m>
+   <z-m>-0.170</z-m>
+  </offsets>
+ </model>
+
+<model>
+   <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/pedals/pedals.xml</path>
+   <offsets>
+   <x-m>2.810</x-m>
+   <y-m>0.270</y-m>
+   <z-m>-0.170</z-m>
+  </offsets>
+ </model>
+
+
+</PropertyList>
+

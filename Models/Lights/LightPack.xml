@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <!-- nav lights -->
+  <!-- green and red navigation lights, usually mounted on the wingtips -->
+  <!-- note: default orientation is up -->
+  <model>
+    <name>GreenLight</name>
+    <path>Aircraft/daVinci_Bf-108_Taifun/Models/Lights/GreenLight.xml</path>
+    <offsets>
+     <x-m>0.065</x-m>
+      <y-m>5.200</y-m>
+      <z-m> 0.500</z-m>
+      <roll-deg>-90</roll-deg>
+      <pitch-deg>-5</pitch-deg> <!-- due to roll, this tunes heading - I want it to point 5 deg more forward -->
+    </offsets>
+  </model>
+  <model>
+    <name>RedLight</name>
+    <path>Aircraft/daVinci_Bf-108_Taifun/Models/Lights/RedLight.xml</path>
+    <offsets>
+       <x-m>0.065</x-m>
+      <y-m> -5.200</y-m>
+      <z-m> 0.500</z-m>
+      <roll-deg>90</roll-deg>
+      <pitch-deg>-5</pitch-deg> <!-- due to roll, this tunes heading - I want it to point 5 deg more forward -->
+    </offsets>
+  </model>
+
+<model>
+    <name>Strobe1</name>
+    <path>Aircraft/daVinci_Bf-108_Taifun/Models/Lights/Strobe.xml</path>
+    <offsets>
+       <x-m>0.065</x-m>
+      <y-m>5.200</y-m>
+      <z-m> 0.500</z-m>
+      <roll-deg>-90</roll-deg>
+      <pitch-deg>-3</pitch-deg> 
+   </offsets>
+  </model>
+  <model>
+    <name>Strobe2</name>
+    <path>Aircraft/daVinci_Bf-108_Taifun/Models/Lights/Strobe.xml</path>
+    <offsets>
+     <x-m>0.065</x-m>
+      <y-m>-5.200</y-m>
+      <z-m> 0.500</z-m>
+      <roll-deg>90</roll-deg>
+      <pitch-deg>-3</pitch-deg>
+   </offsets>
+  </model>
+  
+  <!-- beacon -->
+  <!-- bright red flashing light -->
+  <!-- note: default orientation is up -->
+  <model>
+    <name>Beacon1</name>
+    <path>Aircraft/daVinci_Bf-108_Taifun/Models/Lights/Beacon.xml</path>
+    <offsets>
+    <x-m>2.250</x-m>
+      <y-m>0.000</y-m>
+      <z-m>1.085</z-m>
+      <pitch-deg>6</pitch-deg>
+    </offsets>
+  </model>
+
+<model>
+    <name>Beacon2</name>
+    <path>Aircraft/daVinci_Bf-108_Taifun/Models/Lights/Beacon2.xml</path>
+    <offsets>
+    <x-m>2.255</x-m>
+      <y-m>0.000</y-m>
+      <z-m>-0.065</z-m>
+      <pitch-deg>6</pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- landing Lights 
+  a powerful front facing spotlight -->
+  <model>
+    <name>LandingLight1</name>
+    <path>Aircraft/daVinci_Bf-108_Taifun/Models/Lights/LandingLight.xml</path>
+    <offsets>
+     <x-m> -0.320 </x-m>
+      <y-m> -3.336</y-m>
+      <z-m>0.170</z-m>
+	<pitch-deg>-6</pitch-deg>
+      <heading-deg>-8.00</heading-deg>
+    </offsets>
+  </model>
+   
+        
+ 
+</PropertyList>
