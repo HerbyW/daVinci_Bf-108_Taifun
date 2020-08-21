@@ -4441,7 +4441,7 @@ OBJECT poly
 name "screws"
 loc 0.00254592 0 0
 data 10
-texture "../common/bezel.png"
+texture "bezel.png"
 Circle.007
 crease 30.000000
 numvert 360

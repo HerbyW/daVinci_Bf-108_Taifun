@@ -79,18 +79,18 @@
 <model>
   <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/asi/airspeed.xml</path>
   <offsets>
-   <x-m>2.978</x-m>
-   <y-m>-0.374</y-m>
-   <z-m>0.358</z-m>
+   <x-m>2.99</x-m>
+   <y-m>-0.37</y-m>
+   <z-m>0.36</z-m>
   </offsets>
  </model>
 
 <model>
   <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/asi/airspeed.xml</path>
   <offsets>
-   <x-m>2.978</x-m>
+   <x-m>2.99</x-m>
    <y-m>0.184</y-m>
-   <z-m>0.358</z-m>
+   <z-m>0.36</z-m>
  </offsets>
  </model>
 
@@ -130,6 +130,15 @@
    <z-m>0.190</z-m>
   </offsets>
  </model>
+ 
+ <model>
+  <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/gear/landing_gear.xml</path>
+  <offsets>
+    <x-m>2.99</x-m>
+    <y-m>-0.4</y-m>
+    <z-m>0.18</z-m>
+  </offsets>
+  </model>
 
  <model>
   <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/remote-compass-ger/remote-ger.xml</path>

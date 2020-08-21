@@ -18,7 +18,7 @@
     <dep>0</dep>
    </entry>
    <entry>
-    <ind>3.0</ind>
+    <ind>25.0</ind>
     <dep>180</dep>
    </entry>
   </interpolation>
@@ -46,7 +46,7 @@
     <dep>0</dep>
    </entry>
    <entry>
-    <ind>10.0</ind>
+    <ind>125.0</ind>
     <dep>180</dep>
    </entry>
   </interpolation>

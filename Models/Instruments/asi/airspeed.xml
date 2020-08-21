@@ -1,86 +1,100 @@
-<?xml version="1.0"?>
-
-<!-- Airspeed Indicator, by Dave Culp -->
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
- <path>AS.ac</path>
- <animation>
-  <type>rotate</type>
-  <object-name>needle</object-name>
-  <property>velocities/airspeed-kt</property>
-  <interpolation>
-    <entry>
-      <ind>0</ind>
-      <dep>0.0</dep>
-    </entry>
-    <entry>
-      <ind>50</ind>
-      <dep>20.0</dep>
-    </entry>
-    <entry>
-      <ind>100</ind>
-      <dep>85.0</dep>
-    </entry>
-   <entry>
-      <ind>120</ind>
-      <dep>110.0</dep>
-    </entry>
-   <entry>
-      <ind>150</ind>
-      <dep>135.0</dep>
-    </entry>
-    <entry>
-      <ind>200</ind>
-      <dep>185.0</dep>
-    </entry>
-   <entry>
-      <ind>250</ind>
-      <dep>230.0</dep>
-    </entry>
-    <entry>
-      <ind>300</ind>
-      <dep>275.0</dep>
-    </entry>
-   <entry>
-      <ind>350</ind>
-      <dep>310.0</dep>
-    </entry>
-    <entry>
-      <ind>400</ind>
-      <dep>350.0</dep>
-    </entry>
-  </interpolation>   
-  <center>
-   <x-m>-0.0196</x-m>
-   <y-m>0</y-m>
-   <z-m>0</z-m>
-  </center>
-  <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-  </axis>
- </animation>
+  <path>asi.ac</path>
 
- <animation>
-  <type>material</type>
-  <object-name>face</object-name>
-  <object-name>needle</object-name>
-   <emission>
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>visses</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+  </animation>
+  
+  <!--Working For Rembrandt-->
+
+<animation>
+<object-name>vitre</object-name>
+</animation>
+
+<animation>
+<type>noshadow</type>
+<object-name>vitre</object-name>
+</animation>
+
+<animation>
+<type>shader</type>
+<shader>chrome</shader>
+<texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+<object-name>vitre</object-name>
+</animation>
+  
+  
+
+  <animation>
+    <type>material</type>
+    <object-name>fond</object-name>
+    <object-name>visses</object-name>
+    <object-name>face</object-name>
+    <emission>
       <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
     </emission>
- </animation>    
+  </animation>    
 
- 
- <!-- *** LoD *** -->
+  <animation>
+    <type>material</type>
+    <object-name>needle</object-name>
+    <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   1.0 </red>
+      <green> 0.2 </green>
+      <blue>  0.2 </blue>
+    </emission> 
+  </animation>   
+
+
+  <animation>
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+		<interpolation>
+			<entry><ind>-999</ind><dep>  0</dep></entry>
+			<entry><ind>   0</ind><dep>  0</dep></entry>
+                        <entry><ind>  10</ind><dep>  10</dep></entry>
+			<entry><ind>  50</ind><dep>  68</dep></entry>
+			<entry><ind>  100</ind><dep> 139</dep></entry>
+			<entry><ind>  150</ind><dep> 209</dep></entry>
+			<entry><ind>  200</ind><dep> 282</dep></entry>
+			<entry><ind>  250</ind><dep> 354</dep></entry>
+		</interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+
  <animation>
   <type>range</type>
   <min-m>0</min-m>
-  <max-m>5</max-m>
+  <max-m>10</max-m>
+ </animation>
+ 
+ <animation>
+  <type>scale</type>
+  <property>sim/signals/fdm-initialized</property>
+  <x-factor>0.7</x-factor>
+  <y-factor>0.7</y-factor>
+  <z-factor>0.7</z-factor>
  </animation>
 
 </PropertyList>
+
+
+
+
+
