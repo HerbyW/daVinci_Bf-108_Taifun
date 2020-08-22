@@ -20,13 +20,13 @@ HerbyW modified version
 
 
 YASim solution results:
-Iterations: 1524
-Drag Coefficient: 9.25604
-Lift Ratio: 161.539
-Cruise AoA: 1.54874
-Tail Incidence: 0.265043
-Approach Elevator: -0.420553
-CG: -0.252, -0.022, 0.376
+       Iterations: 1591
+ Drag Coefficient: 9.3477
+       Lift Ratio: 152.059
+       Cruise AoA: 1.56444
+   Tail Incidence: 0.542242
+Approach Elevator: -0.384926
+            CG: -0.210, -0.023, 0.375
 -->
 
 <airplane mass="1777" version="YASIM_VERSION_CURRENT">
@@ -64,8 +64,8 @@ CG: -0.252, -0.022, 0.376
           dihedral="5.5"
           camber="0.107">
         <stall aoa="14." width="3.5" peak="1.52"/>
-        <flap0 start="0.0" end="0.44" lift="1.3" drag="1.7"/>
-        <flap1 start="0.44" end="1" lift="1.51" drag="1.11"/>
+        <flap0 start="0.0" end="0.44" lift="1.3" drag="1.9"/>
+        <flap1 start="0.44" end="1" lift="1.5" drag="1.1"/>
         
         <control-input axis="/controls/flight/flaps" control="FLAP0"/>
         <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
@@ -86,7 +86,7 @@ CG: -0.252, -0.022, 0.376
            camber="-0.0"
            sweep="0">
         <stall aoa="16." width="3.5" peak="1.5"/>
-        <flap0 start="0" end="1" lift="1.700" drag="7.00"/>
+        <flap0 start="0" end="1" lift="1.85" drag="1.2"/>
         
         <control-input axis="/controls/flight/elevator" control="FLAP0"/>
         <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
@@ -100,7 +100,7 @@ CG: -0.252, -0.022, 0.376
            taper="0.3"
            sweep="8">
         <stall aoa="14" width="5" peak="1.8"/>
-        <flap0 start="0.0" end="1" lift="1.870" drag="1.55"/>
+        <flap0 start="0.0" end="1" lift="1.5" drag="1.2"/>
         
         <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
         <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>

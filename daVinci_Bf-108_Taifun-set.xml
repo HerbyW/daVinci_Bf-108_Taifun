@@ -15,275 +15,287 @@ now LINUX compatible!
 -->
 
 <PropertyList>
-
- <sim>
-  <description>daVinci_Bf-108_Taifun</description>
-  <author>HerbyW, Vodoun daVinci, FGUK Dev. Team with Geed, Detlef Faber, Frank Goeldner, featuring freeware 3D Model from Fly Away Simulation</author>
-  <status>Super VooDoo HooDoo</status>  
-  <flight-model>yasim</flight-model>
-  <aero>daVinci_Bf-108_Taifun-yasim</aero>
-  <fuel-fraction>1.0</fuel-fraction>
-
-  <previews>
-      <preview>
-        <type>exterior</type>
-        <splash type="bool">true</splash>
-        <path>Splashscreen/daVinciBf108Taifun_1.jpg</path>
-      </preview>
-      <preview>
-        <type>exterior</type>
-        <splash type="bool">true</splash>
-        <path>Splashscreen/daVinciBf108Taifun_2.jpg</path>
-      </preview>
-      <preview>
-        <type>exterior</type>
-        <splash type="bool">true</splash>
-        <path>Splashscreen/daVinciBf108Taifun_3.jpg</path>
-      </preview>
-     <preview>
-        <type>exterior</type>
-        <splash type="bool">true</splash>
-        <path>Splashscreen/daVinciBf108Taifun_4.jpg</path>
-      </preview>
-     <preview>
-        <type>exterior</type>
-        <splash type="bool">true</splash>
-        <path>Splashscreen/daVinciBf108Taifun_5.jpg</path>
-      </preview>
-       <preview>
-        <type>exterior</type>
-        <splash type="bool">true</splash>
-        <path>Splashscreen/daVinciBf108Taifun_11.jpg</path>
-      </preview>
-      <preview>
-        <type>exterior</type>
-        <splash type="bool">true</splash>
-        <path>Splashscreen/daVinciBf108Taifun_6.jpg</path>
-      </preview>
-      <preview>
-        <type>exterior</type>
-        <splash type="bool">true</splash>
-        <path>Splashscreen/daVinciBf108Taifun_7.jpg</path>
-      </preview>
-      <preview>
-        <type>exterior</type>
-        <splash type="bool">true</splash>
-        <path>Splashscreen/daVinciBf108Taifun_8.jpg</path>
-      </preview>
-      <preview>
-        <type>exterior</type>
-        <splash type="bool">true</splash>
-        <path>Splashscreen/daVinciBf108Taifun_9.jpg</path>
-      </preview>
-      <preview>
-        <type>exterior</type>
-        <splash type="bool">true</splash>
-        <path>Splashscreen/daVinciBf108Taifun_10.jpg</path>
-      </preview>
-    </previews>
     
-  <systems>
-   <electrical>
-    <path>Aircraft/Generic/generic-electrical.xml</path>
-	</electrical>
-	<autopilot>
-        <path>Aircraft/daVinci_Bf-108_Taifun/Systems/VooDooPropAP1.xml</path>
-      </autopilot>
-   </systems> 
-  
-  <sound>
-     <path>Aircraft/daVinci_Bf-108_Taifun/Sounds/daVinci_Bf-108_Taifun-Sound.xml</path>
-  </sound>
-
- <multiplay>
-      <chat_display>1</chat_display>
-      <generic> 
-        <int type="int" n="0">"/sim/multiplay/generic/int[2]"</int>                                      <!-- 0 immat -->
-        <int type="int" n="1">  0 </int>                                      <!-- 1 immat -->
-        <int type="int" n="2">  0 </int>                                      <!-- 2 immat -->
-        <int type="int" n="3">  0 </int>                                      <!-- 3 immat -->
-        <int type="int" n="4">  0 </int>                                      <!-- 4 immat -->
-        <int type="int" n="5">  0 </int>                                      <!-- 5 immat -->
-        <int type="bool" n="6"> 1 </int>                                      <!-- 6 smoke/bomb/torpedo -->
-        <int type="int" n="7">  0 </int>                                      <!-- 7 color -->
-        <int n="8" alias="/systems/electrical/outputs/nav-lights">  0 </int>  <!-- 8 nav-lights -->
-        <int n="9" alias="/sim/model/lights/beacon/state">  false </int>      <!-- 9 strobe-lights -->
-        <int n="10" alias="/controls/electric/key-pos">  0 </int>             <!-- 10 key position -->
-        <float n="0" alias="/sim/model/door-positions/crew/position-norm"/>
-        <float n="1" alias="/sim/model/door-positions/passenger/position-norm"/>
-        <float n="2" alias="/position/gear-agl-m"> 0 </float>                         <!-- altitude for MP shadow -->
-        <float n="3" alias="/position/altitude-ft"> 0 </float>                        <!-- altitude for Smoke/Trail -->
-        <float n="4" alias="/engines/engine[0]/rpm"/>
-        <float n="5" alias="/engines/engine[0]/cranking"/>
-        <float n="6" alias="/gear/gear[0]/wow/"/>
-        <float n="7" alias="/gear/gear[1]/wow/"/>
-        <float n="8" alias="/gear/gear[2]/wow/"/>
-        <float n="9" alias="/gear/gear[0]/rollspeed-ms"/>
-        <float n="10" alias="/gear/gear[1]/rollspeed-ms"/>
-        <float n="11" alias="/gear/gear[2]/rollspeed-ms"/>
-        <float n="13" alias="/sim/weight[0]/weight-lb" />
-	<float n="14" alias="/sim/weight[1]/weight-lb" />
-	<float n="15" alias="/sim/weight[2]/weight-lb" />
-	<float n="16" alias="/sim/weight[3]/weight-lb" />
-    <float n="17" alias="/sim/weight[4]/weight-lb" />
-        <!-- For Bombable -->
-        <int type="int" n="10" alias="controls/armament/trigger">0</int>
-        <string n="9" type="string" />
-      </generic>
-    </multiplay>
- 
-  <virtual-cockpit archive="y">false</virtual-cockpit>
-  <allow-toggle-cockpit archive="y">false</allow-toggle-cockpit>
-
-     
-  <panel>
-  <path>Aircraft/Generic/Panels/generic-vfr-panel.xml</path>
-  <visibility>false</visibility>
-  </panel>
-
-  <model>
-   <path>Aircraft/daVinci_Bf-108_Taifun/Models/daVinci_Bf-108_Taifun.xml</path>
-   <crew>
-      <pilot>
-        <visible>1.0</visible>
-      </pilot>
-   </crew>
-	    
- </model> 
-	
-  <view n="0">
-   <internal archive="y">true</internal>
-   <config>
-    <x-offset-m archive="y" type="double">-0.320</x-offset-m><!-- Right -->
-    <y-offset-m archive="y" type="double">0.82</y-offset-m> <!-- Up    -->
-    <z-offset-m archive="y" type="double">-0.10</z-offset-m><!-- Back  -->
-    <default-field-of-view-deg>97.00</default-field-of-view-deg>
-    <pitch-offset-deg>-9.0</pitch-offset-deg>
-   </config>
-  </view>
-  
-  <hud>
-   <enable3d>false</enable3d>
-  </hud>  
-    <menubar>
-     <default>
-     <menu n="10">
-     <label>daVinci_Bf-108_Taifun</label>
-     <enabled type="bool">true</enabled>
-     <item>
-     <label>Select Livery</label>
-     <binding>
-     <command>nasal</command>
-     <script>aircraft.livery.dialog.toggle()</script>
-     </binding>
-     </item>
-    </menu>
-     </default>
-   </menubar>
-   
-   <weight n="0">
-      <name>Pilot</name>
-      <weight-lb type="double">180</weight-lb>
-      <max-lb type="double">220</max-lb>
-      <min-lb type="double">0</min-lb>
-    </weight>
+    <sim>
+        <description>daVinci_Bf-108_Taifun</description>
+        <author>HerbyW, Vodoun daVinci, FGUK Dev. Team with Geed, Detlef Faber, Frank Goeldner, featuring freeware 3D Model from Fly Away Simulation</author>
+        <status>Super VooDoo HooDoo</status>  
+        <flight-model>yasim</flight-model>
+        <aero>daVinci_Bf-108_Taifun-yasim</aero>
+        <fuel-fraction>1.0</fuel-fraction>
+        
+        <previews>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Splashscreen/daVinciBf108Taifun_1.jpg</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Splashscreen/daVinciBf108Taifun_2.jpg</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Splashscreen/daVinciBf108Taifun_3.jpg</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Splashscreen/daVinciBf108Taifun_4.jpg</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Splashscreen/daVinciBf108Taifun_5.jpg</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Splashscreen/daVinciBf108Taifun_11.jpg</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Splashscreen/daVinciBf108Taifun_6.jpg</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Splashscreen/daVinciBf108Taifun_7.jpg</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Splashscreen/daVinciBf108Taifun_8.jpg</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Splashscreen/daVinciBf108Taifun_9.jpg</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Splashscreen/daVinciBf108Taifun_10.jpg</path>
+            </preview>
+        </previews>
+        
+        <systems>
+            <electrical>
+                <path>Aircraft/Generic/generic-electrical.xml</path>
+            </electrical>
+            <autopilot>
+                <path>Aircraft/daVinci_Bf-108_Taifun/Systems/VooDooPropAP1.xml</path>
+            </autopilot>
+        </systems> 
+        
+        <sound>
+            <path>Aircraft/daVinci_Bf-108_Taifun/Sounds/daVinci_Bf-108_Taifun-Sound.xml</path>
+        </sound>
+        
+        <multiplay>
+            <chat_display>1</chat_display>
+            <generic> 
+                <int type="int" n="0">"/sim/multiplay/generic/int[2]"</int>                                      <!-- 0 immat -->
+                <int type="int" n="1">  0 </int>                                      <!-- 1 immat -->
+                <int type="int" n="2">  0 </int>                                      <!-- 2 immat -->
+                <int type="int" n="3">  0 </int>                                      <!-- 3 immat -->
+                <int type="int" n="4">  0 </int>                                      <!-- 4 immat -->
+                <int type="int" n="5">  0 </int>                                      <!-- 5 immat -->
+                <int type="bool" n="6"> 1 </int>                                      <!-- 6 smoke/bomb/torpedo -->
+                <int type="int" n="7">  0 </int>                                      <!-- 7 color -->
+                <int n="8" alias="/systems/electrical/outputs/nav-lights">  0 </int>  <!-- 8 nav-lights -->
+                <int n="9" alias="/sim/model/lights/beacon/state">  false </int>      <!-- 9 strobe-lights -->
+                <int n="10" alias="/controls/electric/key-pos">  0 </int>             <!-- 10 key position -->
+                <float n="0" alias="/sim/model/door-positions/crew/position-norm"/>
+                <float n="1" alias="/sim/model/door-positions/passenger/position-norm"/>
+                <float n="2" alias="/position/gear-agl-m"> 0 </float>                         <!-- altitude for MP shadow -->
+                <float n="3" alias="/position/altitude-ft"> 0 </float>                        <!-- altitude for Smoke/Trail -->
+                <float n="4" alias="/engines/engine[0]/rpm"/>
+                <float n="5" alias="/engines/engine[0]/cranking"/>
+                <float n="6" alias="/gear/gear[0]/wow/"/>
+                <float n="7" alias="/gear/gear[1]/wow/"/>
+                <float n="8" alias="/gear/gear[2]/wow/"/>
+                <float n="9" alias="/gear/gear[0]/rollspeed-ms"/>
+                <float n="10" alias="/gear/gear[1]/rollspeed-ms"/>
+                <float n="11" alias="/gear/gear[2]/rollspeed-ms"/>
+                <float n="13" alias="/sim/weight[0]/weight-lb" />
+                <float n="14" alias="/sim/weight[1]/weight-lb" />
+                <float n="15" alias="/sim/weight[2]/weight-lb" />
+                <float n="16" alias="/sim/weight[3]/weight-lb" />
+                <float n="17" alias="/sim/weight[4]/weight-lb" />
+                <!-- For Bombable -->
+                <int type="int" n="10" alias="controls/armament/trigger">0</int>
+                <string n="9" type="string" />
+            </generic>
+        </multiplay>
+        
+        <flaps>
+	      <setting> 0.00 </setting>
+	      <setting> 0.25 </setting>
+	      <setting> 0.5 </setting>
+	      <setting> 0.75 </setting>	      
+	      <setting> 1.0 </setting>
+	    </flaps>
+        
+        <virtual-cockpit archive="y">false</virtual-cockpit>
+        <allow-toggle-cockpit archive="y">false</allow-toggle-cockpit>
+        
+        
+        <panel>
+            <path>Aircraft/Generic/Panels/generic-vfr-panel.xml</path>
+            <visibility>false</visibility>
+        </panel>
+        
+        <model>
+            <path>Aircraft/daVinci_Bf-108_Taifun/Models/daVinci_Bf-108_Taifun.xml</path>
+            <crew>
+                <pilot>
+                    <visible>1.0</visible>
+                </pilot>
+            </crew>
+            
+        </model> 
+        
+        <view n="0">
+            <internal archive="y">true</internal>
+            <config>
+                <x-offset-m archive="y" type="double">-0.320</x-offset-m><!-- Right -->
+                <y-offset-m archive="y" type="double">0.82</y-offset-m> <!-- Up    -->
+                <z-offset-m archive="y" type="double">-0.10</z-offset-m><!-- Back  -->
+                <default-field-of-view-deg>100.00</default-field-of-view-deg>
+                <pitch-offset-deg>-4.0</pitch-offset-deg>
+            </config>
+        </view>
+        
+        <hud>
+            <enable3d>false</enable3d>
+        </hud>  
+        <menubar>
+            <default>
+                <menu n="10">
+                    <label>daVinci_Bf-108_Taifun</label>
+                    <enabled type="bool">true</enabled>
+                    <item>
+                        <label>Select Livery</label>
+                        <binding>
+                            <command>nasal</command>
+                            <script>aircraft.livery.dialog.toggle()</script>
+                        </binding>
+                    </item>
+                </menu>
+            </default>
+        </menubar>
+        
+        <weight n="0">
+            <name>Pilot</name>
+            <weight-lb type="double">180</weight-lb>
+            <max-lb type="double">220</max-lb>
+            <min-lb type="double">0</min-lb>
+        </weight>
+        
+        <weight n="1">
+            <name>Copilot</name>
+            <weight-lb type="double">120</weight-lb>
+            <max-lb type="double">220</max-lb>
+            <min-lb type="double">0</min-lb>
+        </weight>
+        
+        <weight n="2">
+            <name>Passenger1</name>
+            <weight-lb type="double">120</weight-lb>
+            <max-lb type="double">220</max-lb>
+            <min-lb type="double">0</min-lb>
+        </weight>
+        
+        <weight n="3">
+            <name>Passenger2</name>
+            <weight-lb type="double">90</weight-lb>
+            <max-lb type="double">220</max-lb>
+            <min-lb type="double">0</min-lb>
+        </weight>
+        
+        <weight n="4">
+            <name>Baggage</name>
+            <weight-lb type="double">400</weight-lb>
+            <max-lb type="double">600</max-lb>
+            <min-lb type="double">0</min-lb>
+        </weight>
+        
+    </sim>
     
-    <weight n="1">
-      <name>Copilot</name>
-      <weight-lb type="double">120</weight-lb>
-      <max-lb type="double">220</max-lb>
-      <min-lb type="double">0</min-lb>
-    </weight>
+    <consumables>
+        <fuel>
+            <tank n="0">
+                <tank-num type="int">0</tank-num>
+                <level-gal_us archive="y">37</level-gal_us>
+            </tank>
+        </fuel>
+    </consumables>
     
-    <weight n="2">
-      <name>Passenger1</name>
-      <weight-lb type="double">120</weight-lb>
-      <max-lb type="double">220</max-lb>
-      <min-lb type="double">0</min-lb>
-    </weight>
     
-    <weight n="3">
-      <name>Passenger2</name>
-      <weight-lb type="double">90</weight-lb>
-      <max-lb type="double">220</max-lb>
-      <min-lb type="double">0</min-lb>
-    </weight>
+    <environment>
+        <turbulence>
+            <use-cloud-turbulence>true</use-cloud-turbulence>
+        </turbulence>
+    </environment>
     
-    <weight n="4">
-      <name>Baggage</name>
-      <weight-lb type="double">400</weight-lb>
-      <max-lb type="double">600</max-lb>
-      <min-lb type="double">0</min-lb>
-    </weight>
-
-</sim>
-
-  <consumables>
-    <fuel>
-      <tank n="0">
-        <tank-num type="int">0</tank-num>
-        <level-gal_us archive="y">37</level-gal_us>
-      </tank>
-      </fuel>
-  </consumables>
-
-
-   <environment>
-    <turbulence>
-      <use-cloud-turbulence>true</use-cloud-turbulence>
-    </turbulence>
-   </environment>
-
-
- <engines>
-  <engine n="0">
-  <running>false</running>
-  <magnetos>1</magnetos>
-  <!--
-   <rpm type="double">700</rpm>
-   -->
-   <!-- fake unimplemented settings -->
-   <fuel-pump-psi type="double">18</fuel-pump-psi>
-   <oil-pressure-psi type="double">75</oil-pressure-psi>
-  </engine>
- </engines>
-
-
- <!-- set up control properties for YASim -->
- <controls>
-
-   <gear>
-   <brake-parking type="bool">true</brake-parking>
-  </gear>
-   
-  </controls>
-
- <!-- Map Keys -->
- <input>
-    <keyboard include="Systems/Taifun-keyboard.xml"/>
- </input>
     
-	
-<!-- Nasal files/scripts -->
-
-  <nasal>
-
-   <light>
-      <file>Aircraft/daVinci_Bf-108_Taifun/Nasal/Lights.nas</file>
-      <file>Aircraft/daVinci_Bf-108_Taifun/Nasal/light.nas</file>
-   </light>
-
-    <spit9>
-      <file>Aircraft/daVinci_Bf-108_Taifun/Nasal/spit9.nas</file>
-      <file>Aircraft/daVinci_Bf-108_Taifun/Nasal/liveries.nas</file>
-    </spit9>
-	
-    <doors>
-      <file>Aircraft/daVinci_Bf-108_Taifun/Nasal/doors.nas</file>
-    </doors>
-      
-  </nasal>
-
+    <engines>
+        <engine n="0">
+            <running>false</running>
+            <magnetos>1</magnetos>
+            <!--
+            <rpm type="double">700</rpm>
+            -->
+            <!-- fake unimplemented settings -->
+            <fuel-pump-psi type="double">18</fuel-pump-psi>
+            <oil-pressure-psi type="double">75</oil-pressure-psi>
+        </engine>
+    </engines>
+    
+    
+    <!-- set up control properties for YASim -->
+    <controls>
+        <engines>
+            <engine>
+                <propeller-pitch type="double">0</propeller-pitch>
+            </engine>
+        </engines>
+        <gear>
+            <brake-parking type="bool">true</brake-parking>
+        </gear>
+        
+    </controls>
+    
+    <!-- Map Keys -->
+    <input>
+        <keyboard include="Systems/Taifun-keyboard.xml"/>
+    </input>
+    
+    
+    <!-- Nasal files/scripts -->
+    
+    <nasal>
+        
+        <light>
+            <file>Aircraft/daVinci_Bf-108_Taifun/Nasal/Lights.nas</file>
+            <file>Aircraft/daVinci_Bf-108_Taifun/Nasal/light.nas</file>
+        </light>
+        
+        <spit9>
+            <file>Aircraft/daVinci_Bf-108_Taifun/Nasal/spit9.nas</file>
+            <file>Aircraft/daVinci_Bf-108_Taifun/Nasal/liveries.nas</file>
+        </spit9>
+        
+        <doors>
+            <file>Aircraft/daVinci_Bf-108_Taifun/Nasal/doors.nas</file>
+        </doors>
+        
+    </nasal>
+    
 </PropertyList>
 
 

@@ -567,8 +567,8 @@ fadeWhite = lightFadeInOut.new(whiteSwitch, lightsPath~"white-light-intensity");
    <path>Aircraft/daVinci_Bf-108_Taifun/Models/pdisk.xml</path>
    <name>pdisk</name>
   <offsets> 
-   <x-m>-2.47</x-m>
-   <y-m>0.0</y-m>
+   <x-m>-2.45364</x-m>
+   <y-m>-0.0</y-m>
    <z-m>0.401</z-m>
     </offsets>
   </model>

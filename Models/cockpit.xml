@@ -3,16 +3,6 @@
  <!-- panel models -->
 
 <model>
-  <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/KI-13/KI-13.xml</path>
-  <offsets>
-   <x-m>3.149</x-m>
-   <y-m>0.000</y-m>
-   <z-m>0.727</z-m>
-  </offsets>
- </model>
-
-
-<model>
   <path>Aircraft/daVinci_Bf-108_Taifun/Models/Instruments/fuel/fuel.xml</path>
   <offsets>
    <x-m>2.98</x-m>
